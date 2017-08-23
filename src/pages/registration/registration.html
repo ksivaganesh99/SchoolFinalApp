@@ -1,0 +1,43 @@
+<ion-header style="background-color: #387ef5;height:80px;">
+    <ion-title><p style="color:white !important;">Let us know about you</p></ion-title>
+
+  </ion-header>
+
+  <ion-content>
+
+
+    <ion-list >
+
+  <ion-item>
+    <ion-label floating>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Mobile No</ion-label>
+    <ion-input type="number" [(ngModel)]="mobileno"></ion-input>
+  </ion-item>
+ <ion-item>
+    <ion-label floating>Email Id</ion-label>
+    <ion-input type="email" [(ngModel)]="emailid"></ion-input>
+  </ion-item>
+  
+ <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password1"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label >Standard</ion-label>
+    <ion-select [(ngModel)]="standard" multiple="false">
+      <ion-option value="1">+1</ion-option>
+      <ion-option value="2">+2</ion-option>
+      
+    </ion-select>
+  </ion-item>
+<ion-item>
+<button ion-button large style="width:100%;"  (click)="register()">Register</button>
+</ion-item>
+
+</ion-list>  
+<h4 style="text-align: center;">Already registered? <a (click)="login()">Login</a></h4>
+    </ion-content>

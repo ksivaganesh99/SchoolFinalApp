@@ -1,0 +1,19 @@
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <ion-title>Hi {{username}}</ion-title>
+      <ion-item menuClose detail-none (click)="myprofile();">My Profile</ion-item>
+
+      <ion-item menuClose detail-none>Homeworks</ion-item>
+
+      <ion-item menuClose detail-none (click)="signout()">Logout</ion-item>
+
+    
+
+
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

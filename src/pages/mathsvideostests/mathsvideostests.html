@@ -1,0 +1,111 @@
+
+<ion-header>
+ <ion-navbar no-border-bottom >
+    <ion-title>
+      {{subjectname}}
+    </ion-title>
+  </ion-navbar>
+
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="type">
+      
+      <ion-segment-button value="tests">
+        Test Paper
+      </ion-segment-button>
+     
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="type" style="height:100%;">
+   <div  *ngSwitchCase="'videos'">
+
+  <ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 1</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+ 
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 2</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+ 
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 3</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 4</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+   </div>
+   <div  *ngSwitchCase="'tests'" style="height:100%;">
+
+
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNQrVd44eulObINF9lH7qC0plxAyQnrHfrumY74mlgYTyFUw/viewform " width="100%" height="100%" frameborder="0" >Loading...</iframe>
+
+
+
+   </div>
+   <div  *ngSwitchCase="'pdfs'" style="height:100%;">
+<iframe width="100%" height="100%" src="https://s3.amazonaws.com/online.fliphtml5.com/cxkf/wxfu/index.html#p=1" frameborder="0"  allowtransparency>Loading.....</iframe>
+   </div>
+  </div>
+</ion-content>

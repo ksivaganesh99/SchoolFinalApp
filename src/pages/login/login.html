@@ -1,0 +1,28 @@
+
+
+<ion-header style="background-color: #387ef5;height:80px;">
+    <ion-title> <p style="color:white !important;">Explore the world of learning</p></ion-title>
+
+  </ion-header>
+
+
+
+  <ion-content>
+    <ion-list >
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
+  </ion-item>
+ 
+<ion-item center>
+<button ion-button large style="width:100%;" (click)="gotosubject()">Login</button>
+</ion-item>
+</ion-list>  
+<h4 style="text-align: center;">Not registered? <a (click)="gotoregister()">Register</a></h4>
+    </ion-content>

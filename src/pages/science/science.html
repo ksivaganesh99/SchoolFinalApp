@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar no-border-bottom >
+    <ion-title>
+      Science
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="subject">
+      <ion-segment-button value="Physics">
+        Physics
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <div [ngSwitch]="subject">
+<div  *ngSwitchCase="'Physics'">
+  <ion-card (click)="gotovideos('Heat')">
+    <img src="" style="background-color: #ffbd4a;height: 140px;"/>
+
+    <div class="card-title">Heat</div>
+    <div class="card-subtitle" margin-top></div>
+    
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Nature of Light')">
+    <img src="" style="background-color: #ff5c5c;height: 140px;"/>
+    <div class="card-title">Nature of Light</div>
+    <div class="card-subtitle" margin-top></div>
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Properties of Matter')">
+   <img src="" style="background-color: #b760e6;height: 140px;"/>
+
+    <div class="card-title">Properties of Matter</div>
+    <div class="card-subtitle" margin-top></div>
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Lens')">
+   <img src="" style="background-color: #ff63b1;height: 140px;"/>
+
+    <div class="card-title">Lens</div>
+    <div class="card-subtitle" margin-top></div>
+  </ion-card>
+</div>
+
+  
+<div  *ngSwitchCase="'Chemistry'">
+  <ion-card (click)="gotovideos('Chemicals in Our Daily Life')">
+    <img src="" style="background-color: #ffbd4a;height: 140px;"/>
+
+    <div class="card-title">Chemicals</div>
+    <div class="card-subtitle" margin-top>41 Videos and 20 Tests</div>
+    
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Electronic Configuration')">
+    <img src="" style="background-color: #ff5c5c;height: 140px;"/>
+    <div class="card-title">Electronics</div>
+    <div class="card-subtitle" margin-top>20 Videos and 10 Tests</div>
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Chemical Bonding')">
+   <img src="" style="background-color: #b760e6;height: 140px;"/>
+
+    <div class="card-title">Chemical Bonding</div>
+    <div class="card-subtitle" margin-top>15 Videos and 5 Tests</div>
+  </ion-card>
+</div>
+    
+  
+<div  *ngSwitchCase="'Biology'">
+  <ion-card (click)="gotovideos('Natural Resources')">
+    <img src="" style="background-color: #ffbd4a;height: 140px;"/>
+
+    <div class="card-title">Natural Resources</div>
+    <div class="card-subtitle" margin-top>41 Videos and 20 Tests</div>
+    
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Food')">
+    <img src="" style="background-color: #ff5c5c;height: 140px;"/>
+    <div class="card-title">Food</div>
+    <div class="card-subtitle" margin-top>20 Videos and 10 Tests</div>
+  </ion-card>
+
+  <ion-card (click)="gotovideos('Living Organisms')">
+   <img src="" style="background-color: #b760e6;height: 140px;"/>
+
+    <div class="card-title">Living Organisms</div>
+    <div class="card-subtitle" margin-top>15 Videos and 5 Tests</div>
+  </ion-card>
+
+  <ion-card (click)="gotovideos('The World of Microbes')">
+   <img src="" style="background-color: #ff63b1;height: 140px;"/>
+
+    <div class="card-title">The World of Microbes</div>
+    <div class="card-subtitle" margin-top>50 Videos and 30 Tests</div>
+  </ion-card>
+</div>
+    
+  </div>
+</ion-content>
